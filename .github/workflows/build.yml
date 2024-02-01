@@ -32,4 +32,4 @@ jobs:
         with:
           platforms: linux/amd64
           push: true
-          tags: fjebaker/auto-correet
+          tags: shellywell123/auto-correet
