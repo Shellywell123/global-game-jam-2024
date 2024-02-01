@@ -157,6 +157,7 @@ class ConnectionManager:
         self.buffers: dict[int, list[dict]] = {1: [], 2: []}
 
     def ready(self) -> bool:
+        logger.info("Checking if ready, currenty have %s users", len(self.usermap))
         return len(self.usermap) == 4
 
     async def start(self) -> None:
@@ -197,7 +198,6 @@ class ConnectionManager:
         await user.send_message(
             Event.team_assign(user.identity, user.team, user.playernum).to_json()
         )
-        logger.info("User % s joined team %s", user.team, user.playernum)
 
         # assign to the list of users
         self.usermap[user.identity] = user
