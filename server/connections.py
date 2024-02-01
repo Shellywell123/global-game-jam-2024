@@ -197,6 +197,7 @@ class ConnectionManager:
         await user.send_message(
             Event.team_assign(user.identity, user.team, user.playernum).to_json()
         )
+        logger.info("User % s joined team %s", user.team, user.playernum)
 
         # assign to the list of users
         self.usermap[user.identity] = user
