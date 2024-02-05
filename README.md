@@ -22,5 +22,12 @@
                                                                                     ... please laugh
 ```
 
+### Send it
+
+Start a local server:
+```bash
+docker run --name ggj --rm -p 8080:8080 shellywell123/auto-correet:latest
+```
+
 - [global-game-jam](https://globalgamejam.org/games/2024/please-laugh-8)
-- [duckumentation](https://github.com/RiFactor/global-game-jam-2024/blob/main/docs/)
+- [duckumentation](https://github.com/Shellywell123/global-game-jam-2024/blob/main/docs/)
